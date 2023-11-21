@@ -78,6 +78,30 @@ h2 {
     user-select:none;
     text-decoration: none;
   }
+
+  .header-menu > a {
+    text-decoration: none;
+    font-size: 1.3rem;
+    margin-left: 70px;
+    position: relative;
+    color: white;
+    background-color: rgb(158, 129, 254);
+    border: 1px solid white;
+    padding: 10px;
+    border-radius: 35px;
+  }
+
+  .header-menu > span::before{
+    content: "";
+    height: 2px;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 40%;
+    transition: 0.5s width;
+    background-color: #eb4d4b;
+  }
+
   .header-menu > span:hover::before{
     width: 100%;
   }
